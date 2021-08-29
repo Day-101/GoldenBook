@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Day-101/GoldenBook/issues"
   },
-  "homepage": "https://github.com/Day-101/GoldenBook#readme"
+  "homepage": "https://github.com/Day-101/GoldenBook#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
