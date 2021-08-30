@@ -16,7 +16,9 @@ app.get('/', (request, response) => {
 });
 
 app.post('/', (request, response) => {
-  console.log(request.body);
+  if (request.body.message === undefined || request.body.message === '') {
+    response.render('pages/index', {error: "Vous n'avez pas entré de message :("});
+  };
 });
 
 app.listen(8080);
